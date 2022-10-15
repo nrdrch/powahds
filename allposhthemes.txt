@@ -1,0 +1,30 @@
+Possible Entries:
+
+      1_shell                 devious-diamonds     json               pararussel              sorin
+      agnoster.minimal        di4am0nd             jtracey93          patriksvensson          space
+      agnoster                dracula              jv_sitecorian      peru                    spaceship
+      agnosterplus            easy-term            kali               pixelrobots             star
+      aliens                  emodipt-extend       kushal             plague                  stelbent-compact.minimal
+      amro                    emodipt              lambda             poshmon                 stelbent.minimal
+      atomic                  fish                 lambdageneration   powerlevel10k_classic   takuya
+      atomicBit               free-ukraine         larserikfinholt    powerlevel10k_lean      the-unnamed
+      avit                    froczh               lightgreen         powerlevel10k_modern    thecyberden
+      blue-owl                glowsticks           M365Princess       powerlevel10k_rainbow   tiwahu
+      blueish                 gmay                 marcduiker         powerline               tokyo
+      bubbles                 grandpa-style        markbull           probua.minimal          tokyonight_storm
+      bubblesextra            gruvbox              material           pure                    tonybaloney
+      bubblesline             half-life            microverse-power   quick-term              uew
+      capr4n                  honukai              mojada             remk                    unicorn
+      cert                    hotstick.minimal     montys             robbyrussel             velvet
+      chips                   hul10                mt                 rudolfs-dark            wholespace
+      cinnamon                hunk                 multiverse-neon    rudolfs-light           wopian
+      clean-detailed          huvix                negligible         schema.json             xtoys
+      cloud-context           if_tea               neko               sim-web                 ys
+      cloud-native-azure      illusi0n             night-owl          slim                    zash
+      cobalt2                 iterm2               nordtron           slimfat
+      craver                  jandedobbeleer       nu4a               smoothie
+      darkblood               jblab_2021           onehalf.minimal    sonicboom_dark
+      default                 jonnychipz           paradox            sonicboom_light
+<=====================================================================================================================>
+)
+>>-> 

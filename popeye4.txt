@@ -1,0 +1,9 @@
+<=====================================================================================================================>
+          .-'-.            Examples:
+        /`     |__              Name Of Alias:    The Code It Runs:             What It Does:
+      /`  _.--`-,-`             (Choose A Name)   (define what it Runs)
+      '-|`   a '<-.   []        docs            | cd $HOME\Documents          | Will Change Directory to Documents
+        \     _\__) \=`         yt              | start https://youtube.com   | Opens YouTube in your Default Browser
+         C_  `    ,_/           somescript      | cmd.exe /c Path\2\Script.bat| Will Run Script.bat
+           | ;----'
+>>-> 

@@ -1,0 +1,9 @@
+<=====================================================================================================================>
+          .-'-.
+        /`     |__
+      /`  _.--`-,-`                 Set Theme By Name           ( 1  Create A New Module         ( 5
+      '-|`   a '<-.   []            Look At The Themes Online   ( 2  Create A New Alias          ( 6
+        \     _\__) \=`             Sync Themes w/ OMP Github   ( 3  Useful Scripts & Tools      ( 7
+         C_  `    ,_/               Update Powah                ( 4
+           | ;----'
+>>-> 
