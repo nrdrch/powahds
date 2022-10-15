@@ -1,0 +1,9 @@
+<=====================================================================================================================>
+          .-'-.            Examples:                (Only Accepts Commands Without Parameters)
+        /`     |__              Name Of Alias:    The Code It Runs:             What It Does:
+      /`  _.--`-,-`             (Choose A Name)   (define what it Runs)
+      '-|`   a '<-.   []        c               | Clear-Host                  | Will clear your prompt with: c  
+        \     _\__) \=`         gh              | Get-Help                    | Will show Help Pages with: gh
+         C_  `    ,_/           np              | notepad                     | Will run Notepad with: np   
+           | ;----'
+>>-> 
