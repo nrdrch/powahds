@@ -6,7 +6,8 @@ SET "thms= C:\Users\%username%\Documents\WindowsPowerShell\ds\allposhthemes.txt"
 SET "pop2= C:\Users\%username%\Documents\WindowsPowerShell\ds\popeye2.txt"
 SET "pop3= C:\Users\%username%\Documents\WindowsPowerShell\ds\popeye3.txt"
 SET "pop4= C:\Users\%username%\Documents\WindowsPowerShell\ds\popeye4.txt"
-SET "dslctn= C:\Users\%username%\Documents\WindowsPowerShell\ds"
+SET "ds= C:\Users\%username%\Documents\WindowsPowerShell\ds"
+SET "powahdir= C:\Users\%username%\Documents\WindowsPowerShell"
 CLS
 :MENU
 cls
@@ -57,21 +58,21 @@ GOTO MENU
 powershell -Command [void]"{. $PROFILE; Clear-Host}"
 GOTO Quit
 :uppowah
-SET "powahdir= C:\Users\%username%\Documents\WindowsPowerShell"
+cls
 cd %TEMP%
-IF EXIST %TEMP%\powah (
+IF EXIST %TEMP%\powahds (
     RMDIR /S /Q %TEMP%\powahds
 )
 git clone https://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@github.com/nrdrch/powahds.git
-copy /y %TEMP%\powah\powah.bat %powahdir%\powah.bat
-copy /y %TEMP%\powah\ds\popeye.txt %pop%
-copy /y %TEMP%\powah\ds\popeye2.txt %pop2%
-copy /y %TEMP%\powah\ds\popeye3.txt %pop3%
-copy /y %TEMP%\powah\ds\popeye4.txt %pop4%
-copy /y %TEMP%\powah\ds\allposhthemes.txt %thms%
-copy /y %TEMP%\powah\ds\rcwin.ps1 %dslctn%
-copy /y %TEMP%\powah\ds\winhelper.txt %dslctn%
-copy /y %TEMP%\powah\ds\installtron.ps1 %dslctn%
+copy /y %TEMP%\powahds\powah.bat %powahdir%\powah.bat
+copy /y %TEMP%\powahds\ds\popeye.txt %pop%
+copy /y %TEMP%\powahds\ds\popeye2.txt %pop2%
+copy /y %TEMP%\powahds\ds\popeye3.txt %pop3%
+copy /y %TEMP%\powahds\ds\popeye4.txt %pop4%
+copy /y %TEMP%\powahds\ds\allposhthemes.txt %thms%
+copy /y %TEMP%\powahds\ds\rcwin.ps1 %ds%
+copy /y %TEMP%\powahds\ds\winhelper.txt %ds%
+copy /y %TEMP%\powahds\ds\installtron.ps1 %ds%
 GOTO MENU
 :MENU2
 CLS
