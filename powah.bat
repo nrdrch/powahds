@@ -75,7 +75,7 @@ IF EXIST %TEMP%\powah (
 )
 git clone https://github.com/nrdrch/powah.git %TEMP%\powah
 git clone https://github.com/nrdrch/powahds.git %TEMP%\powahds
-copy /y %TEMP%\powah\powah.bat %powahdir%\powah.bat
+copy /y %TEMP%\powahds\powah.bat %powahdir%\powah.bat
 xcopy /s /q /y %TEMP%\powahds %powahdir%\ds\
 GOTO MENU
 :MENU2
