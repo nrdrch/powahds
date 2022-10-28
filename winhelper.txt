@@ -1,6 +1,6 @@
 <=====================================================================================================================>
           .-'-.           Microsoft Activation Scripts ( 1   ReclaimWindows               ( 5
-        /`     |__        Tron Script Checker          ( 2   MSEdgeRedirect               ( 6
+        /`     |__        Tron Script                  ( 2   MSEdgeRedirect               ( 6
       /`  _.--`-,-`       System File Checker          ( 3   Windows Powertools           ( 7
       '-|`   a '<-.   []  Win10Debloater               ( 4   Go Back                      ( 0
         \     _\__) \=`
