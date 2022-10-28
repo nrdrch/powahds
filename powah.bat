@@ -13,7 +13,7 @@ SET "ds= C:\Users\%username%\Documents\WindowsPowerShell\ds"
 SET "powahdir= C:\Users\%username%\Documents\WindowsPowerShell"
 SET "prompt= C:\Users\%username%\Documents\WindowsPowerShell\ds\winhelper.txt"
 SET "psprofile= C:\Users\%username%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
-SET "msatxt = C:\Users\%username%\Documents\WindowsPowerShell\ds\msa.txt"
+SET "msatxt= C:\Users\%username%\Documents\WindowsPowerShell\ds\msa.txt"
 CLS
 
 :MENU
@@ -80,7 +80,7 @@ xcopy /s /q /y %TEMP%\powahds %powahdir%\ds\
 GOTO MENU
 :MENU2
 CLS
-type %pop2%
+Type %pop2%
 SET INPUT=
 SET /P INPUT= Choose An Option (Or Q To Quit): 
 IF /I '%INPUT%'=='1' GOTO newmodule
@@ -97,7 +97,7 @@ IF EXIST %TEMP%\modulebuilder2.txt (
     DEL /q %TEMP%\modulebuilder2.txt
 )
 set /p alias= Name Your Custom Alias: 
-ECHO What you type to Run   :%alias% >> %TEMP%\modulebuilder.txt
+ECHO What you Type to Run   :%alias% >> %TEMP%\modulebuilder.txt
 ECHO function Pop-PWH%alias% { >> %TEMP%\modulebuilder2.txt
 ECHO     [CmdletBinding()] >> %TEMP%\modulebuilder2.txt
 ECHO     param ( >> %TEMP%\modulebuilder2.txt
@@ -110,8 +110,8 @@ GOTO progr
 cls
 :progr
 cls
-type %TEMP%\modulebuilder.txt
-type %pop3%
+Type %TEMP%\modulebuilder.txt
+Type %pop3%
 SET INPUT=
 SET /P INPUT= Choose An Option (Or Q To Quit):
 IF /I '%INPUT%'=='1' GOTO savemodule
@@ -123,18 +123,18 @@ IF NOT EXIST C:\Users\%username%\Documents\WindowsPowerShell\mods.psm1 (
     ECHO Import-Module "$HOME\Documents\WindowsPowerShell\mods.psm1" >> %psprofile%
 )
 ECHO New-Alias -Name %alias% -Value Pop-PWH%alias% >> %psprofile%
-type %TEMP%\modulebuilder2.txt >> C:\Users\%username%\Documents\WindowsPowerShell\mods.psm1
+Type %TEMP%\modulebuilder2.txt >> C:\Users\%username%\Documents\WindowsPowerShell\mods.psm1
 GOTO Quit
 :helpnm
 cls
-type %pop4%
+Type %pop4%
 SET /P INPUT= Understood? (Y): 
 IF /I '%INPUT%'=='Y' GOTO MENU2
 cls
 :winhelper
 cls
 :MENU4
-type %prompt%
+Type %prompt%
 SET INPUT=
 SET /P INPUT= Choose An Option (Or Q To Quit): 
 IF /I '%INPUT%'=='1' GOTO winactivationtxt
@@ -149,16 +149,16 @@ IF /I '%INPUT%'=='Q' GOTO Quit
 cls
 :winactivationtxt
 cls
-type %msatxt%
+Type %msatxt%
 SET INPUT=
-SET /P INPUT= Choose An Option (Or Q To Quit):
+SET /P INPUT= Choose An Option (Or Q To Quit): 
 IF /I '%INPUT%'=='1' GOTO msaweb
-IF /I '%INPUT%'=='Y' GOTO winactivation
+IF /I '%INPUT%'=='y' GOTO winactivation
 IF /I '%INPUT%'=='0' GOTO winhelper
+IF /I '%INPUT%'=='Q' GOTO Quit
 :msaweb
 cls
 powershell -C "start https://massgrave.dev/#Method_2_-_Traditional"
-cls
 GOTO winactivationtxt
 :winactivation
 cls
