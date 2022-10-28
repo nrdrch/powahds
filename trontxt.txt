@@ -1,0 +1,9 @@
+<=====================================================================================================================>
+          .-'-.           Tron is a script that "fights for the User." It aims to automate ~87% of the tedious work
+        /`     |__        in getting a badly-running Windows system back on its feet.
+      /`  _.--`-,-`       IF YOU ARE NOT FAMILLIAR WITH TRON, PLEASE VISIT THE WEBSITE AND READ THIER INSTRUCTIONS
+      '-|`   a '<-.   []  ___________________________________________________________________________________________
+        \     _\__) \=`   Visit The Website           ( 1
+         C_  `    ,_/     Go Back                     ( 0
+           | ;----'       Continue                    ( Y
+>>-> 
