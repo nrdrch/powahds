@@ -144,6 +144,7 @@ IF /I '%INPUT%'=='3' GOTO winfilecheck
 IF /I '%INPUT%'=='4' GOTO windebloater
 IF /I '%INPUT%'=='5' GOTO reclaimwin
 IF /I '%INPUT%'=='6' GOTO edgerd
+IF /I '%INPUT%'=='7' GOTO pwtools
 IF /I '%INPUT%'=='0' GOTO MENU
 IF /I '%INPUT%'=='Q' GOTO Quit
 cls
@@ -182,6 +183,11 @@ IF NOT EXIST "C:\Program Files\MSEdgeRedirect" (
 IF EXIST "C:\Program Files\MSEdgeRedirect" (
     ECHO MSEdgeRedirect is already Installed
 )
+GOTO MENU4
+:pwtools
+cls
+powershell -C "iwr -useb https://windowspowertool.com/tool | iex"
+cls
 GOTO MENU4
 :newalias
 cls
