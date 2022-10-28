@@ -157,9 +157,9 @@ IF /I '%INPUT%'=='Y' GOTO winactivation
 IF /I '%INPUT%'=='0' GOTO winhelper
 :msaweb
 cls
-start https://massgrave.dev/#Method_2_-_Traditional
+powershell -C "start https://massgrave.dev/#Method_2_-_Traditional"
 cls
-GOTO winhelper
+GOTO winactivationtxt
 :winactivation
 cls
 powershell -C "iwr -useb https://massgrave.dev/get | iex"
