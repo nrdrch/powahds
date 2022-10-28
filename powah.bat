@@ -13,7 +13,7 @@ SET "ds= C:\Users\%username%\Documents\WindowsPowerShell\ds"
 SET "powahdir= C:\Users\%username%\Documents\WindowsPowerShell"
 SET "prompt= C:\Users\%username%\Documents\WindowsPowerShell\ds\winhelper.txt"
 SET "psprofile= C:\Users\%username%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
-
+SET "msatxt = C:\Users\%username%\Documents\WindowsPowerShell\ds\msa.txt"
 CLS
 
 :MENU
@@ -133,12 +133,11 @@ IF /I '%INPUT%'=='Y' GOTO MENU2
 cls
 :winhelper
 cls
-
 :MENU4
 type %prompt%
 SET INPUT=
 SET /P INPUT= Choose An Option (Or Q To Quit): 
-IF /I '%INPUT%'=='1' GOTO winactivation
+IF /I '%INPUT%'=='1' GOTO winactivationtxt
 IF /I '%INPUT%'=='2' GOTO tronscript
 IF /I '%INPUT%'=='3' GOTO winfilecheck
 IF /I '%INPUT%'=='4' GOTO windebloater
@@ -148,21 +147,29 @@ IF /I '%INPUT%'=='7' GOTO pwtools
 IF /I '%INPUT%'=='0' GOTO MENU
 IF /I '%INPUT%'=='Q' GOTO Quit
 cls
+:winactivationtxt
+cls
+type %msatxt%
+SET INPUT=
+SET /P INPUT= Choose An Option (Or Q To Quit):
+IF /I '%INPUT%'=='1' GOTO start https://massgrave.dev/#Method_2_-_Traditional
+IF /I '%INPUT%'=='Y' GOTO winactivation
+IF /I '%INPUT%'=='0' GOTO winhelper
 :winactivation
 cls
 powershell -C "iwr -useb https://massgrave.dev/get | iex"
 cls
-GOTO MENU4
+GOTO winhelper
 :tronscript
 cls
 powershell -C "start https://github.com/bmrf/tron#use"
 powershell -C "Powershell.exe -executionpolicy remotesigned -File $HOME\Documents\WindowsPowerShell\ds\installtron.ps1"
 start C:\Users\%username%\Desktop\Tron.exe
-GOTO MENU4
+GOTO winhelper
 :winfilecheck
 cls
 powershell -C "sfc /scannow"
-GOTO MENU4
+GOTO winhelper
 :windebloater
 cls
 IF NOT EXIST C:\Users\%username%\Documents\winutil (
@@ -171,7 +178,7 @@ IF NOT EXIST C:\Users\%username%\Documents\winutil (
 IF EXIST C:\Users\%username%\Documents\winutil (
     powershell -C "cd $HOME\Documents\winutil; Powershell.exe -executionpolicy remotesigned -File winutil.ps1"
 )
-GOTO MENU4
+GOTO winhelper
 :reclaimwin
 cls
 Powershell -executionpolicy remotesigned -File %~dp0\ds\rcwin.ps1
@@ -183,12 +190,12 @@ IF NOT EXIST "C:\Program Files\MSEdgeRedirect" (
 IF EXIST "C:\Program Files\MSEdgeRedirect" (
     ECHO MSEdgeRedirect is already Installed
 )
-GOTO MENU4
+GOTO winhelper
 :pwtools
 cls
 powershell -C "iwr -useb https://windowspowertool.com/tool | iex"
 cls
-GOTO MENU4
+GOTO winhelper
 :newalias
 cls
 Type %pop2b%

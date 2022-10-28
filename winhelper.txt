@@ -1,22 +1,9 @@
-
-              ,---------------------------,
-              |  /---------------------\  |
-              | |                       | |               Activate Windows with Microsoft Activation Scripts ( 1
-              | |      Clean            | |
-              | |          Repair       | |               Download Tron Script                               ( 2
-              | |                       | |
-              | |                       | |               Use the System File Checker                        ( 3
-              |  \_____________________/  |
-              |___________________________|               Get Chris Titus Tech's Win10Debloater              ( 4
-            ,---\_____     []     _______/------,
-          /         /______________\           /|         ReclaimWindows To Disable Telemetery               ( 5
-        /___________________________________ /  | ___
-        |                                   |   |    )    Install MSEdgeRedirect                             ( 6
-        |  _ _ _                 [-------]  |   |   (
-        |  o o o                 [-------]  |  /    _)_   Install and Run Windows Powertools                 ( 7
-        |__________________________________ |/     /  /
-    /-------------------------------------/|      ( )/    Go Back                                            ( 0
-  /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/ /
-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/ /
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<=====================================================================================================================>
+          .-'-.           Microsoft Activation Scripts ( 1   ReclaimWindows               ( 5
+        /`     |__        Tron Script Checker          ( 2   MSEdgeRedirect               ( 6
+      /`  _.--`-,-`       System File Checker          ( 3   Windows Powertools           ( 7
+      '-|`   a '<-.   []  Win10Debloater               ( 4   Go Back                      ( 0
+        \     _\__) \=`
+         C_  `    ,_/
+           | ;----'
 >>-> 
