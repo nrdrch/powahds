@@ -14,8 +14,9 @@ SET "powahdir= C:\Users\%username%\Documents\WindowsPowerShell"
 SET "prompt= C:\Users\%username%\Documents\WindowsPowerShell\ds\winhelper.txt"
 SET "psprofile= C:\Users\%username%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
 SET "msatxt= C:\Users\%username%\Documents\WindowsPowerShell\ds\msa.txt"
-CLS
+SET "trontxt= C:\Users\%username%\Documents\WindowsPowerShell\ds\trontxt.txt"
 
+CLS
 :MENU
 cls
 Type %pop%
@@ -138,7 +139,7 @@ Type %prompt%
 SET INPUT=
 SET /P INPUT= Choose An Option (Or Q To Quit): 
 IF /I '%INPUT%'=='1' GOTO winactivationtxt
-IF /I '%INPUT%'=='2' GOTO tronscript
+IF /I '%INPUT%'=='2' GOTO tronscripttxt
 IF /I '%INPUT%'=='3' GOTO winfilecheck
 IF /I '%INPUT%'=='4' GOTO windebloater
 IF /I '%INPUT%'=='5' GOTO reclaimwin
@@ -165,6 +166,17 @@ cls
 powershell -C "iwr -useb https://massgrave.dev/get | iex"
 cls
 GOTO winhelper
+:tronscripttxt
+cls 
+cls
+Type %msatxt%
+SET INPUT=
+SET /P INPUT= Choose An Option (Or Q To Quit): 
+IF /I '%INPUT%'=='1' GOTO msaweb
+IF /I '%INPUT%'=='y' GOTO winactivation
+IF /I '%INPUT%'=='0' GOTO winhelper
+IF /I '%INPUT%'=='Q' GOTO Quit
+
 :tronscript
 cls
 powershell -C "start https://github.com/bmrf/tron#use"
@@ -198,7 +210,7 @@ IF EXIST "C:\Program Files\MSEdgeRedirect" (
 GOTO winhelper
 :pwtools
 cls
-powershell -C "iwr -useb https://windowspowertool.com/tool | iex"
+powershell -C "iwr -useb tool.windowspowertool.workers.dev | iex"
 cls
 GOTO winhelper
 :newalias
