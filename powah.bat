@@ -99,13 +99,10 @@ IF EXIST %TEMP%\modulebuilder2.txt (
 )
 set /p alias= Name Your Custom Alias: 
 ECHO What you Type to Run   :%alias% >> %TEMP%\modulebuilder.txt
-ECHO function Pop-PWH%alias% { >> %TEMP%\modulebuilder2.txt
-ECHO     [CmdletBinding()] >> %TEMP%\modulebuilder2.txt
-ECHO     param ( >> %TEMP%\modulebuilder2.txt
-ECHO     )        >> %TEMP%\modulebuilder2.txt
+ECHO function %alias% { >> %TEMP%\modulebuilder2.txt
 set /p modulecode= Enter the Main Code you want to run: 
 ECHO Code beeing executed   :%modulecode% >> %TEMP%\modulebuilder.txt
-ECHO     %modulecode% >> %TEMP%\modulebuilder2.txt
+ECHO     Clear-Host; %modulecode% >> %TEMP%\modulebuilder2.txt
 echo } >> %TEMP%\modulebuilder2.txt
 GOTO progr
 cls
@@ -114,7 +111,7 @@ cls
 Type %TEMP%\modulebuilder.txt
 Type %pop3%
 SET INPUT=
-SET /P INPUT= Choose An Option (Or Q To Quit):
+SET /P INPUT= Choose An Option (Or Q To Quit): 
 IF /I '%INPUT%'=='1' GOTO savemodule
 IF /I '%INPUT%'=='0' GOTO MENU
 IF /I '%INPUT%'=='Q' GOTO Quit
@@ -123,7 +120,6 @@ cls
 IF NOT EXIST C:\Users\%username%\Documents\WindowsPowerShell\mods.psm1 (
     ECHO Import-Module "$HOME\Documents\WindowsPowerShell\mods.psm1" >> %psprofile%
 )
-ECHO New-Alias -Name %alias% -Value Pop-PWH%alias% >> %psprofile%
 Type %TEMP%\modulebuilder2.txt >> C:\Users\%username%\Documents\WindowsPowerShell\mods.psm1
 GOTO Quit
 :helpnm
