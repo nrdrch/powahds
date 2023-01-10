@@ -97,10 +97,10 @@ IF EXIST %TEMP%\modulebuilder.txt (
 IF EXIST %TEMP%\modulebuilder2.txt (
     DEL /q %TEMP%\modulebuilder2.txt
 )
-set /p alias= Name Your Custom Alias: 
+set /p alias= ">> Name: " 
 ECHO What you Type to Run   :%alias% >> %TEMP%\modulebuilder.txt
 ECHO function %alias% { >> %TEMP%\modulebuilder2.txt
-set /p modulecode= Enter the Main Code you want to run: 
+set /p modulecode= ">> Enter the Main Code you want to run: "
 ECHO Code beeing executed   :%modulecode% >> %TEMP%\modulebuilder.txt
 ECHO     Clear-Host; %modulecode% >> %TEMP%\modulebuilder2.txt
 echo } >> %TEMP%\modulebuilder2.txt
